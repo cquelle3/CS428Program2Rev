@@ -85,8 +85,8 @@ int main(){
     write(connfd1, message, strlen(message));
     write(connfd2, message, strlen(message));
     
-    cout << "Server Sending: '" << message << "'" << endl;
-    cout << "Sent acknowledgment to both clients" << endl;
+    cout << "Server Sending Acknowledgments: '" << message << "'" << endl;
+    //cout << "Sent acknowledgment to both clients" << endl;
     
     return 0;
 }
