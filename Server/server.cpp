@@ -82,11 +82,9 @@ int main(){
     strcpy(message, str_message.c_str());
     
     //send response to both clients
+    cout << "Server Sending Acknowledgments: '" << message << "'" << endl;
     write(connfd1, message, strlen(message));
     write(connfd2, message, strlen(message));
-    
-    cout << "Server Sending Acknowledgments: '" << message << "'" << endl;
-    //cout << "Sent acknowledgment to both clients" << endl;
-    
+
     return 0;
 }
